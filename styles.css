@@ -1,0 +1,112 @@
+/* Estilo general para el cuerpo de la página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: #ffffff;
+}
+
+/* Estilo del contenedor principal que contiene todo el contenido */
+.container {
+  text-align: center;
+  background-color: #333333;
+  padding: 20px;
+  border-radius: 10px;
+  color: #ffffff;
+  width: 80%;
+  max-width: 400px;
+}
+
+/* Estilo para los contenedores de entrada de texto */
+.input-container {
+  margin-bottom: 1px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilo para las barras de entrada de texto */
+input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px; /* Añade un pequeño margen inferior */
+  background-color: #444444;
+  border: 1px solid #666666;
+  color: #ffffff;
+}
+
+/* Estilo general para los botones */
+button {
+  width: 48%;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+/* Estilo específico para el botón de "Registrarse" */
+#registerBtn {
+  background-color: #ff3366;
+}
+
+/* Estilo específico para el botón de "Ingresar" */
+#loginBtn {
+  background-color: #777777;
+}
+
+/* Estilo específico para el botón de cerrar sesión con icono de apagado más pequeño */
+.power-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Estilo específico para el botón de enviar minimalista con color rojo celeste */
+.red-btn {
+  background-color: #ff3366;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilo específico para el menú fijo en la parte superior */
+.fixed-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333; /* Color de fondo del menú */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+/* Estilo específico para el contenedor de cierre de sesión */
+.logout-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Estilo específico para el texto de cierre de sesión */
+.logout-text {
+  margin-right: 10px; /* Margen a la derecha del texto */
+  white-space: nowrap; /* Evitar el salto de línea */
+}
+
+/* Estilo específico para el botón de cierre de sesión */
+#logoutBtn {
+  font-size: 18px; /* Tamaño de fuente más pequeño */
+  padding: 5px 10px; /* Espaciado reducido */
+  margin-right: 10px; /* Separación de la orilla derecha */
+}

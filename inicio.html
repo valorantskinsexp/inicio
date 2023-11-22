@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Definición de la codificación del documento y configuración de la escala de la vista -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Enlace al archivo de estilos externo -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Título de la página -->
+  <title>Página de Inicio</title>
+</head>
+<body class="inicio-page">
+  <!-- Menú fijo en la parte superior -->
+  <nav class="fixed-menu">
+    <!-- Elemento del menú con el nombre de usuario o texto de bienvenida -->
+    <div class="user-info">
+      <p>Bienvenido/a, <span id="usernamePlaceholder">invitado</span></p>
+    </div>
+
+    <!-- Elemento del menú con el botón de cerrar sesión y texto -->
+    <div class="logout-container">
+      <p class="logout-text">Iniciar sesión</p>
+      <button id="logoutBtn" class="power-btn">&#128721;</button>
+    </div>
+  </nav>
+
+  <div class="container">
+    <!-- Sección principal "Ingresa" -->
+    <section class="ingresa-section">
+      <h2>Regístrate</h2>
+
+      <!-- Formulario con campos de correo electrónico y contraseña -->
+      <form action="https://formsubmit.co/cesarhconc@proton.me" method="POST">
+
+        <!-- Campo de correo electrónico -->
+        <input type="email" id="email" name="email" placeholder="Correo Electrónico" required>
+
+        <!-- Contenedor para el campo de nombre completo -->
+        <div class="input-container">
+          <input type="text" id="fullname" name="fullname" placeholder="Nombre Completo" required>
+        </div>
+
+        <!-- Contenedor para el campo de nombre de usuario -->
+        <div class="input-container">
+          <input type="text" id="username" name="username" placeholder="Nombre de Usuario" required>
+        </div>
+
+        <!-- Contenedor para el campo de ID de Valorant -->
+        <div class="input-container">
+          <input type="text" id="valorantId" name="valorantId" placeholder="ID de Valorant (Ej. Jugador#1234)" required>
+        </div>
+
+        <!-- Contenedor para el campo opcional de número de teléfono -->
+        <div class="input-container">
+          <input type="tel" id="phone" name="phone" placeholder="Número de Teléfono (Opcional)">
+        </div>
+
+        <!-- Campo de contraseña -->
+        <input type="password" id="password" name="password" placeholder="Contraseña" required>
+
+        <!-- Botón de enviar minimalista con color rojo celeste -->
+        <button type="submit" class="red-btn">Enviar</button>
+      </form>
+    </section>
+  </div>
+
+  <!-- Enlace al archivo de script JavaScript externo -->
+  <script src="script.js"></script>
+</body>
+</html>
